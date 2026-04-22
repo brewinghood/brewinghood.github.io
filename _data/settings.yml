@@ -4,7 +4,7 @@ phone: (555) 555-1111
 address: 123 Main Street, Anytown NY
 hours: Mon-Fri 11am-10pm, Sat-Sun 10am-11pm
 menu_items:
-  - name: White Coffee
+  - name: White Coffee 2
     description: Bright citrus and pine, 6.5% ABV
     price: '7.00'
   - name: Brown Coffee
