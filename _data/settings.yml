@@ -1,0 +1,16 @@
+business_name: "Brewinghood"
+tagline: "Your neighborhood coffeshop"
+phone: "(555) 555-5555"
+address: "123 Main Street, Anytown NY"
+hours: "Mon-Fri 11am-10pm, Sat-Sun 10am-11pm"
+
+menu_items:
+    - name: "West Coast IPA"
+      description: "Bright citrus and pine, 6.5% ABV"
+      price: "7.00"
+    - name: "Hefeweizen"
+      description: "Bavarian wheat, banana and clove, 5.2% ABV"
+      price: "6.50"
+    - name: "Stout"
+      description: "Dark roasted malt, chocolate finish, 7.1% ABV"
+      price: "7.50"
