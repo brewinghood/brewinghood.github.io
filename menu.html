@@ -1,0 +1,15 @@
+---
+layout: default
+title: Menu
+---
+
+<section class="menu">
+    <h2>Our Drinks</h2>
+    {% for item in site.data.settings.menu_items %}
+    <div class="menu-item">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.description }}</p>
+        <span class="price">${{ item.price }}</span>
+    </div>
+    {% endfor %}
+</section>
