@@ -40,9 +40,10 @@ header {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 22vh;
     max-height: 300px;
     aspect-ratio: 404 / 346;
+    min-height: 200px;
 }
 .logo h1 {
     text-indent: -9999px;
