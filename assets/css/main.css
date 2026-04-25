@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -56,13 +55,17 @@ header {
     justify-content: flex-start;
 }
 .site_info_meta .socials {
-    font-size: 40px;
-    margin: 0 0 30px 0;
-    padding: 0 0 30px 0;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
     border-bottom: 2px solid #fff;
+    display: flex;
+    gap: 20px;
 }
 .site_info_meta .socials a {
-    padding: 15px;
+    padding: 0;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
 }
 .site_info_meta .hours {
     text-align: right;
@@ -72,8 +75,9 @@ header {
 .hours_time {
     font-size: 24px;
     font-weight: 700;
+    line-height: 1em;
 }
-.hours_time {
+.hours_note {
     font-size: 20px;
     font-weight: 400;
 }
@@ -82,6 +86,63 @@ section {
     padding: 80px;
 }
 section > h2 {
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 0 5px 0;
+    line-height: 1.2em;
+}
+section > h2 + p {
+    margin: 0;
     font-weight: 300;
+}
+
+.beans_list {
+}
+.single_bean {
+    padding: 30px 80px;
+    border-bottom: 1px dashed #61554c;
+}
+.single_bean:last-child {
+    border: none;
+}
+.bean_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bean_details h3 {
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0 0 5px 0;
+}
+.bean_details h4 {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+.bean_details p.notes {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #6a1414;
+    font-size: 20px;
+}
+.bean_metas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.bean_meta_single {
+    flex: 0 0 auto;
+}
+.bean_meta_single_key {
+    text-transform: uppercase;
+}
+.bean_meta_single_value {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #6a1414;
+    font-size: 20px;
 }
