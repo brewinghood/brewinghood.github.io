@@ -15,19 +15,23 @@ social_accounts:
 hours: 09:00 - 18:00
 hours_note: closed thursdays
 background_image: /assets/uploads/hero.webp
+beans_heading: seasonal beans
+beans_copy: We rotate beans regularly. There is always something new to try!
+menu_title: our menu
+menu_copy: Full Coffee Bar, plus a few extras!
 address: 123 Main Street, Anytown NY
-menu_items:
-  - price: '7.00'
-    description: Bright citrus and pine, 6.5% ABV
-    name: White Coffee 2
-  - price: '6.50'
-    description: Bavarian wheat, banana and clove, 5.2% ABV
-    name: Brown Coffee
-  - price: '7.50'
-    description: Dark roasted malt, chocolate finish, 7.1% ABV
-    name: Coconut Coffee
-  - price: '7.50'
-    description: Dark roasted malt, chocolate finish, 7.1% ABV
-    name: Creamy Salt Coffee
-phone: (555) 555-1111
 tagline: Your neighborhood coffeeshop
+phone: (555) 555-1111
+menu_items:
+  - name: White Coffee 2
+    description: Bright citrus and pine, 6.5% ABV
+    price: '7.00'
+  - name: Brown Coffee
+    description: Bavarian wheat, banana and clove, 5.2% ABV
+    price: '6.50'
+  - name: Coconut Coffee
+    description: Dark roasted malt, chocolate finish, 7.1% ABV
+    price: '7.50'
+  - name: Creamy Salt Coffee
+    description: Dark roasted malt, chocolate finish, 7.1% ABV
+    price: '7.50'
