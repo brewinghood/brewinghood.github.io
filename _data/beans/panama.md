@@ -1,0 +1,12 @@
+---
+order: 1
+country: namerica/pa
+country_name: Panama
+title: Boquete Damarli Noble Rogue
+taste_notes: Citrus, Mango, Strawberry, Grapefruit, Hazlenut
+price: 45
+region: West Valley
+variety: Caturra
+processing: Washed
+altitude: 1800 masl
+---
