@@ -22,11 +22,14 @@ main {
     margin: 0 auto;
     padding: 0 40px;
 }
-header {
+.header_wrapper {
     background-color: #160e02;
     color: white;
     height: 100vh;
     max-height: 800px;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 .header_flex {
     display: flex;
@@ -95,10 +98,11 @@ section > h2 + p {
     margin: 0;
     font-weight: 300;
 }
-
-.beans_list {
+section.beans {
+    background: #fcf8f3;
 }
 .single_bean {
+    position: relative;
     padding: 30px 80px;
     border-bottom: 1px dashed #61554c;
 }
@@ -113,13 +117,14 @@ section > h2 + p {
 .bean_details h3 {
     font-size: 26px;
     font-weight: 200;
-    margin: 0 0 5px 0;
+    margin: 0;
+    line-height: 1.2em;
 }
 .bean_details h4 {
     font-size: 18px;
     font-weight: 600;
     font-style: italic;
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
 }
 .bean_details p.notes {
     font-family: "Handlee", cursive;
@@ -127,16 +132,18 @@ section > h2 + p {
     font-style: normal;
     color: #6a1414;
     font-size: 20px;
+    margin: 0 0 20px 0;
 }
 .bean_metas {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 70px;
 }
 .bean_meta_single {
     flex: 0 0 auto;
 }
 .bean_meta_single_key {
+    font-size: 14px;
     text-transform: uppercase;
 }
 .bean_meta_single_value {
@@ -145,4 +152,74 @@ section > h2 + p {
     font-style: normal;
     color: #6a1414;
     font-size: 20px;
+}
+.bean_price {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 80px;
+    text-align: center;
+    font-size: 27px;
+    color: #6a1414;
+    font-weight: 700;
+}
+.bean_price sup {
+    font-size: 0.7em;
+    position: relative;
+    top: -8px;
+    color: #8a6f6f;
+}
+.country_icon {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.menu {
+    background: #fff;
+}
+.menu_section {
+    margin: 0 0 60px 0;
+}
+.menu_section h3 {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 50px 0 20px 0;
+}
+.menu_item {
+    padding: 7px 0;
+    border-bottom: 1px dotted #dacbb5;
+}
+.menu_item:last-child {
+    border: none;
+}
+.menu_item_flex {
+    display: flex;
+    gap: 30px;
+    line-height: 1.3em;
+    justify-content: space-between;
+}
+.menu_item_flex .menu_item_title {
+    font-size: 21px;
+    font-weight: 400;
+}
+.menu_item_price {
+    font-size: 21px;
+    font-weight: 400;
+}
+.menu_item_note {
+    padding: 3px 0 0 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.menu_item_group {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 25px 0 15px 0;
 }
