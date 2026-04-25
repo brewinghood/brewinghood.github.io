@@ -19,7 +19,8 @@ main {
     background-color: #f7f0e6;
 }
 .site_wrapper {
-    max-width: 1520px;
+    max-width: 1320px;
+    margin: 0 auto;
     padding: 0 40px;
 }
 header {
@@ -27,6 +28,7 @@ header {
     color: white;
     height: 100vh;
     max-height: 800px;
+    padding: 40px;
 }
 .header_flex {
     display: flex;
@@ -34,13 +36,17 @@ header {
     gap: 50px;
 }
 .logo {
-    background-image: url("");
+    background-image: url("../img/brewinghood-logo.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 30vh;
     max-height: 300px;
     aspect-ratio: 404 / 346;
+}
+.logo h1 {
+    text-indent: -9999px;
+    position: absolute;
 }
 .site_info_meta {
     display: flex;
