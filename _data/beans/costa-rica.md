@@ -1,0 +1,12 @@
+---
+order: 2
+country: namerica/cr
+country_name: Costa Rica
+title: West Valley Caturra
+taste_notes: Grapes, Mango, Raisins, Toffe, Blueberry  Jam, Orange Peel
+price: 45
+region: West Valley
+variety: Caturra
+processing: Natural
+altitude: 1300 masl
+---
