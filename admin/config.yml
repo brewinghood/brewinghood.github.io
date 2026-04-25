@@ -38,6 +38,8 @@ collections:
       folder: "_data/beans"
       create: true
       slug: "{{slug}}"
+      extension: yml
+      format: yml
       identifier_field: "country_name"
       summary: "{{country_name}} — {{title}}"
       sortable_fields: ["order", "country_name", "title"]
@@ -252,6 +254,8 @@ collections:
       folder: "_data/menu_sections"
       create: true
       slug: "{{slug}}"
+      extension: yml
+      format: yml
       identifier_field: "title"
       summary: "{{title}}"
       sortable_fields: ["order", "title"]
