@@ -85,6 +85,10 @@ section > h2 + p {
     color: white;
     font-size: 30px;
     line-height: 30px;
+    transition: ease all 500ms;
+}
+.site_info_meta .socials a:hover {
+    color: gold;
 }
 .site_info_meta .hours {
     text-align: right;
@@ -227,4 +231,27 @@ section.menu {
     padding: 3px 0 0 0;
     font-size: 14px;
     font-style: italic;
+}
+
+@media (max-width: 700px) {
+    .header_wrapper {
+        height: auto;
+        max-height: 100vh;
+        max-width: 100%;
+    }
+    .header_flex {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+    }
+    .site_info_meta {
+        align-items: center;
+    }
+    .site_info_meta .hours {
+        text-align: center;
+    }
 }
