@@ -4,14 +4,18 @@ title: Home
 ---
 
 <section class="beans">
-    {% if site.data.beans.heading and site.data.beans.heading != "" %}
-    <h2>{{ site.data.beans.heading }}</h2>
-    {% endif %} {% if site.data.beans.copy and site.data.beans.copy != "" %}
-    <p>{{ site.data.beans.copy }}</p>
+    {% if site.data.settings.beans_heading and site.data.settings.beans_heading != "" %}
+    <h2>{{ site.data.settings.beans_heading }}</h2>
+    {% endif %}
+    {% if site.data.settings.beans_copy and site.data.settings.beans_copy != "" %}
+    <p>{{ site.data.settings.beans_copy }}</p>
     {% endif %}
 
     <div class="beans_list">
-        {% for bean in site.data.beans.bean_list %}
+        {% assign beans_all = "" | split: "" %}
+        {% for pair in site.data.beans %}{% assign beans_all = beans_all | push: pair[1] %}{% endfor %}
+        {% assign beans_sorted = beans_all | sort: "order" %}
+        {% for bean in beans_sorted %}
         <div class="single_bean">
             <div class="bean_details">
                 {% if bean.country_name and bean.country_name != "" %}
@@ -54,14 +58,18 @@ title: Home
 </section>
 
 <section class="menu">
-    {% if site.data.menu.title and site.data.menu.title != "" %}
-    <h2>{{ site.data.menu.title }}</h2>
-    {% endif %} {% if site.data.menu.copy and site.data.menu.copy != "" %}
-    <p>{{ site.data.menu.copy }}</p>
+    {% if site.data.settings.menu_title and site.data.settings.menu_title != "" %}
+    <h2>{{ site.data.settings.menu_title }}</h2>
+    {% endif %}
+    {% if site.data.settings.menu_copy and site.data.settings.menu_copy != "" %}
+    <p>{{ site.data.settings.menu_copy }}</p>
     {% endif %}
 
     <div class="our_menu">
-        {% for section in site.data.menu.sections %}
+        {% assign sections_all = "" | split: "" %}
+        {% for pair in site.data.menu_sections %}{% assign sections_all = sections_all | push: pair[1] %}{% endfor %}
+        {% assign sections_sorted = sections_all | sort: "order" %}
+        {% for section in sections_sorted %}
         <div class="menu_section">
             <h3>{{ section.title }}</h3>
             {% for group in section.groups %}

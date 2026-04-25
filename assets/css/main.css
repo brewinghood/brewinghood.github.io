@@ -44,6 +44,8 @@ section > h2 + p {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 40px;
+    background-size: cover;
+    background-position: top center;
 }
 .header_flex {
     display: flex;
