@@ -1,91 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #222;
-}
-
-header {
-  background: #1a1a2e;
-  color: white;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header a {
-  color: white;
-  text-decoration: none;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-header p {
-  margin: 0.25rem 0 0;
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1.5rem;
+body,
+html {
+    font-family: "Jost", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dacbb5;
+    font-style: normal;
 }
 
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+    background-color: #f7f0e6;
 }
-
-.hero {
-  text-align: center;
-  padding: 3rem 0;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 2rem;
+.site_wrapper {
+    max-width: 1520px;
+    padding: 0 40px;
 }
-
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-bottom: 1px solid #eee;
-  padding: 0.75rem 0;
+header {
+    background-color: #160e02;
+    color: white;
+    height: 100vh;
+    max-height: 800px;
 }
-
-.menu-item h3 {
-  margin: 0 0 0.25rem;
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
-.menu-item p {
-  margin: 0;
-  color: #666;
-  font-size: 0.9rem;
+.logo {
+    background-image: url("");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    max-height: 300px;
+    aspect-ratio: 404 / 346;
 }
-.price {
-  font-weight: bold;
-  white-space: nowrap;
-  margin-left: 1rem;
+.site_info_meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
-
-footer {
-  background: #1a1a2e;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-  font-size: 0.9rem;
+.site_info_meta .socials {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+    border-bottom: 2px solid #fff;
 }
-
-footer p {
-  margin: 0.25rem 0;
+.site_info_meta .socials a {
+    padding: 15px;
+}
+.site_info_meta .hours {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.hours_time {
+    font-size: 24px;
+    font-weight: 700;
+}
+.hours_time {
+    font-size: 20px;
+    font-weight: 400;
 }

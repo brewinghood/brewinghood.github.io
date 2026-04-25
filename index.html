@@ -3,18 +3,118 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-    <h2>{{ site.data.settings.tagline }}</h2>
+<section class="beans">
+    <h2>seasonal beans</h2>
+    <p>We rotate beans regularly. There is always something new to try!</p>
+
+    <div class="beans_list">
+        <div class="single_bean">
+            <div class="bean_details">
+                <h3>Panama</h3>
+                <h2>Boquete Damarli Noble Rogue</h2>
+                <p class="notes">Citrus, Mango, Strawberry, Grapefruit, Hazlenut</p>
+
+                <div class="bean_metas">
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Region</div>
+                        <div class="bean_meta_single_value">West Valley</div>
+                    </div>
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Variety</div>
+                        <div class="bean_meta_single_value">West Valley</div>
+                    </div>
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Processing</div>
+                        <div class="bean_meta_single_value">Washed</div>
+                    </div>
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Altitude</div>
+                        <div class="bean_meta_single_value">1600 masl</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_bean">
+            <div class="bean_details">
+                <h3>Costa Rica</h3>
+                <h2>Boquete Damarli Noble Rogue</h2>
+                <p class="notes">Citrus, Mango, Strawberry, Grapefruit, Hazlenut</p>
+
+                <div class="bean_metas">
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Region</div>
+                        <div class="bean_meta_single_value">West Valley</div>
+                    </div>
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Variety</div>
+                        <div class="bean_meta_single_value">West Valley</div>
+                    </div>
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Processing</div>
+                        <div class="bean_meta_single_value">Washed</div>
+                    </div>
+                    <div class="bean_meta_single">
+                        <div class="bean_meta_single_key">Altitude</div>
+                        <div class="bean_meta_single_value">1600 masl</div>
+                    </div>
+                </div>
+                <div class="bean_details_price"></div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="preview">
-    <h2>On Tap</h2>
-    {% for item in site.data.settings.menu_items limit:3 %}
-    <div class="menu-item">
-        <h3>{{ item.name }}</h3>
-        <p>{{ item.description }}</p>
-        <span class="price">${{ item.price }}</span>
+<div class="menu">
+    <h2>Our Menu</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate reprehenderit adipisci quaerat.</p>
+
+    <div class="our_menu">
+        <div class="menu_section">
+            <h3>Espresso Bar</h3>
+            <div class="menu_item">
+                <div class="menu_item_flex">
+                    <div class="menu_item_title">Espresso</div>
+                    <div class="menu_item_price">30đ</div>
+                </div>
+                <div class="menu_item_note">Lorem ipsum dolor sit amet consectetur</div>
+            </div>
+            <div class="menu_item">
+                <div class="menu_item_flex">
+                    <div class="menu_item_title">Americano</div>
+                    <div class="menu_item_price">30đ</div>
+                </div>
+            </div>
+            <div class="menu_item_group">
+                <h4>coffee with milk</h4>
+                <div class="menu_item">
+                    <div class="menu_item_flex">
+                        <div class="menu_item_title">Cortado</div>
+                        <div class="menu_item_price">60đ</div>
+                    </div>
+                    <div class="menu_item_note">Lorem ipsum dolor sit amet consectetur</div>
+                </div>
+                <div class="menu_item">
+                    <div class="menu_item_flex">
+                        <div class="menu_item_title">Cappuccino</div>
+                        <div class="menu_item_price">45đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_item_group">
+                <h4>blended</h4>
+                <div class="menu_item">
+                    <div class="menu_item_flex">
+                        <div class="menu_item_title">Brown Sugar Espresso</div>
+                        <div class="menu_item_price">40đ</div>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <div class="menu_item_flex">
+                        <div class="menu_item_title">Tonic Espresso</div>
+                        <div class="menu_item_price">45đ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    {% endfor %}
-    <a href="{{ site.baseurl }}/menu">See full menu →</a>
-</section>
+</div>
