@@ -1,0 +1,15 @@
+---
+order: 30
+title: Hot Tea
+groups:
+  - title: ''
+    items:
+      - title: Tea Pot
+        price: 50
+        note: ''
+        choose_beans: false
+      - title: Masala Chai
+        price: 40
+        note: ''
+        choose_beans: false
+---
