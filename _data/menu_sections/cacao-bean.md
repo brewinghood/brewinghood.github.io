@@ -1,0 +1,15 @@
+---
+order: 40
+title: Cacao Bean
+groups:
+  - title: ''
+    items:
+      - title: Chocolate
+        price: 40
+        note: ''
+        choose_beans: false
+      - title: Mocha
+        price: 55
+        note: ''
+        choose_beans: false
+---
