@@ -28,12 +28,12 @@ header {
     color: white;
     height: 100vh;
     max-height: 800px;
-    padding: 40px;
 }
 .header_flex {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    padding: 40px 0 0 0;
 }
 .logo {
     background-image: url("../img/brewinghood-logo.webp");
