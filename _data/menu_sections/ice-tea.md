@@ -1,0 +1,23 @@
+---
+order: 2
+title: Ice tea
+groups:
+  - title: ''
+    items:
+      - title: Lychee Tea
+        price: 35
+        note: ''
+        choose_beans: false
+      - title: Apricot Tea
+        price: 35
+        note: ''
+        choose_beans: false
+      - title: Berries Tea
+        price: 35
+        note: ''
+        choose_beans: false
+      - title: Mango Kombucha
+        price: 35
+        note: ''
+        choose_beans: false
+---
