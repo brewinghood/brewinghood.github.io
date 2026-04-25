@@ -13,16 +13,16 @@
         <header>
             <div class="header_wrapper">            
                 <div class="header_flex">
-                    <div class="logo" aria-label="Brewinghood Coffeebar"><h1>Brewinghood Coffeebar</h1></div>
+                    <div class="logo" aria-label="{{ site.data.settings.business_name }}"><h1>{{ site.data.settings.business_name }}</h1></div>
                     <div class="site_info_meta">
                         <div class="socials">
-                            <a href="#" target="_blank" aria-label="Google Maps"><i class="fa-solid fa-location-dot"></i></a>
-                            <a href="#" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
-                            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            {% for account in site.data.settings.social_accounts %}
+                            <a href="{{ account.url }}" target="_blank" aria-label="{{ account.name }}"><i class="{{ account.icon }}"></i></a>
+                            {% endfor %}
                         </div>
                         <div class="hours">
-                            <div class="hours_time">09:00 - 18:00</div>
-                            <div class="hours_note">closed thursdays</div>
+                            <div class="hours_time">{{ site.data.settings.hours }}</div>
+                            <div class="hours_note">{{ site.data.settings.hours_note }}</div>
                         </div>
                     </div>
                 </div>

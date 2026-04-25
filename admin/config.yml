@@ -7,22 +7,273 @@ backend:
 media_folder: "assets/uploads"
 
 collections:
-    - name: "settings"
+    - name: "site_settings"
       label: "Site Settings"
+      icon: "settings"
       files:
           - name: "general"
-            label: "Restaurant Info"
+            label: "Site Settings"
             file: "_data/settings.yml"
             fields:
                 - { label: "Business Name", name: "business_name", widget: "string" }
-                - { label: "Tagline", name: "tagline", widget: "string" }
-                - { label: "Phone", name: "phone", widget: "string" }
-                - { label: "Address", name: "address", widget: "string" }
-                - { label: "Hours", name: "hours", widget: "string" }
-                - label: "Menu Items"
-                  name: "menu_items"
+                - label: "Social Accounts"
+                  name: "social_accounts"
                   widget: "list"
+                  label_singular: "Social Account"
                   fields:
-                      - { label: "Item Name", name: "name", widget: "string" }
-                      - { label: "Description", name: "description", widget: "string" }
-                      - { label: "Price", name: "price", widget: "string" }
+                      - { label: "Name", name: "name", widget: "string" }
+                      - { label: "Icon (FA Class)", name: "icon", widget: "string", hint: "Full class string e.g. fa-brands fa-instagram or fa-solid fa-location-dot" }
+                      - { label: "URL", name: "url", widget: "string" }
+                - { label: "Hours", name: "hours", widget: "string" }
+                - { label: "Hours Note", name: "hours_note", widget: "string" }
+                - { label: "Background Image", name: "background_image", widget: "image" }
+
+    - name: "beans"
+      label: "Beans"
+      icon: "coffee"
+      files:
+          - name: "beans"
+            label: "Beans"
+            file: "_data/beans.yml"
+            fields:
+                - { label: "Heading", name: "heading", widget: "string" }
+                - { label: "Copy", name: "copy", widget: "text" }
+                - label: "Bean List"
+                  name: "bean_list"
+                  widget: "list"
+                  label_singular: "Bean"
+                  fields:
+                      - label: "Country"
+                        name: "country"
+                        widget: "select"
+                        hint: "Stores continent/code for SVG path. Also fill in Country Name below."
+                        options:
+                            # ── Africa ──────────────────────────────────────
+                            - { label: "Angola", value: "africa/ao" }
+                            - { label: "Benin", value: "africa/bj" }
+                            - { label: "Botswana", value: "africa/bw" }
+                            - { label: "Burkina Faso", value: "africa/bf" }
+                            - { label: "Burundi", value: "africa/bi" }
+                            - { label: "Cameroon", value: "africa/cm" }
+                            - { label: "Cape Verde", value: "africa/cv" }
+                            - { label: "Central African Republic", value: "africa/cf" }
+                            - { label: "Chad", value: "africa/td" }
+                            - { label: "Comoros", value: "africa/km" }
+                            - { label: "Congo (DRC)", value: "africa/cd" }
+                            - { label: "Congo (Republic)", value: "africa/cg" }
+                            - { label: "Cote d'Ivoire", value: "africa/ci" }
+                            - { label: "Djibouti", value: "africa/dj" }
+                            - { label: "Egypt", value: "africa/eg" }
+                            - { label: "Equatorial Guinea", value: "africa/gq" }
+                            - { label: "Eritrea", value: "africa/er" }
+                            - { label: "Eswatini", value: "africa/sz" }
+                            - { label: "Ethiopia", value: "africa/et" }
+                            - { label: "Gabon", value: "africa/ga" }
+                            - { label: "Gambia", value: "africa/gm" }
+                            - { label: "Ghana", value: "africa/gh" }
+                            - { label: "Guinea", value: "africa/gn" }
+                            - { label: "Guinea-Bissau", value: "africa/gw" }
+                            - { label: "Kenya", value: "africa/ke" }
+                            - { label: "Lesotho", value: "africa/ls" }
+                            - { label: "Liberia", value: "africa/lr" }
+                            - { label: "Libya", value: "africa/ly" }
+                            - { label: "Madagascar", value: "africa/mg" }
+                            - { label: "Malawi", value: "africa/mw" }
+                            - { label: "Mali", value: "africa/ml" }
+                            - { label: "Mauritania", value: "africa/mr" }
+                            - { label: "Mauritius", value: "africa/mu" }
+                            - { label: "Morocco", value: "africa/ma" }
+                            - { label: "Mozambique", value: "africa/mz" }
+                            - { label: "Namibia", value: "africa/na" }
+                            - { label: "Niger", value: "africa/ne" }
+                            - { label: "Nigeria", value: "africa/ng" }
+                            - { label: "Rwanda", value: "africa/rw" }
+                            - { label: "Sao Tome and Principe", value: "africa/st" }
+                            - { label: "Senegal", value: "africa/sn" }
+                            - { label: "Seychelles", value: "africa/sc" }
+                            - { label: "Sierra Leone", value: "africa/sl" }
+                            - { label: "Somalia", value: "africa/so" }
+                            - { label: "South Africa", value: "africa/za" }
+                            - { label: "South Sudan", value: "africa/ss" }
+                            - { label: "Sudan", value: "africa/sd" }
+                            - { label: "Tanzania", value: "africa/tz" }
+                            - { label: "Togo", value: "africa/tg" }
+                            - { label: "Tunisia", value: "africa/tn" }
+                            - { label: "Uganda", value: "africa/ug" }
+                            - { label: "United Arab Emirates", value: "africa/ae" }
+                            - { label: "Zambia", value: "africa/zm" }
+                            - { label: "Zimbabwe", value: "africa/zw" }
+                            # ── Asia / Middle East ───────────────────────────
+                            - { label: "Afghanistan", value: "asia/af" }
+                            - { label: "Armenia", value: "asia/am" }
+                            - { label: "Azerbaijan", value: "asia/az" }
+                            - { label: "Bahrain", value: "asia/bh" }
+                            - { label: "Bangladesh", value: "asia/bd" }
+                            - { label: "Bhutan", value: "asia/bt" }
+                            - { label: "Brunei", value: "asia/bn" }
+                            - { label: "Cambodia", value: "asia/kh" }
+                            - { label: "China", value: "asia/cn" }
+                            - { label: "Cyprus", value: "asia/cy" }
+                            - { label: "Georgia", value: "asia/ge" }
+                            - { label: "Hong Kong", value: "asia/hk" }
+                            - { label: "India", value: "asia/in" }
+                            - { label: "Indonesia", value: "asia/id" }
+                            - { label: "Iran", value: "asia/ir" }
+                            - { label: "Iraq", value: "asia/iq" }
+                            - { label: "Israel", value: "asia/il" }
+                            - { label: "Japan", value: "asia/jp" }
+                            - { label: "Jordan", value: "asia/jo" }
+                            - { label: "Kazakhstan", value: "asia/kz" }
+                            - { label: "Kuwait", value: "asia/kw" }
+                            - { label: "Kyrgyzstan", value: "asia/kg" }
+                            - { label: "Laos", value: "asia/la" }
+                            - { label: "Lebanon", value: "asia/lb" }
+                            - { label: "Malaysia", value: "asia/my" }
+                            - { label: "Maldives", value: "asia/mv" }
+                            - { label: "Mongolia", value: "asia/mn" }
+                            - { label: "Myanmar", value: "asia/mm" }
+                            - { label: "Nepal", value: "asia/np" }
+                            - { label: "North Korea", value: "asia/kp" }
+                            - { label: "Oman", value: "asia/om" }
+                            - { label: "Pakistan", value: "asia/pk" }
+                            - { label: "Philippines", value: "asia/ph" }
+                            - { label: "Qatar", value: "asia/qa" }
+                            - { label: "Russia", value: "asia/ru" }
+                            - { label: "Saudi Arabia", value: "asia/sa" }
+                            - { label: "Singapore", value: "asia/sg" }
+                            - { label: "South Korea", value: "asia/kr" }
+                            - { label: "Sri Lanka", value: "asia/lk" }
+                            - { label: "Syria", value: "asia/sy" }
+                            - { label: "Taiwan", value: "asia/tw" }
+                            - { label: "Tajikistan", value: "asia/tj" }
+                            - { label: "Thailand", value: "asia/th" }
+                            - { label: "Timor-Leste", value: "asia/tl" }
+                            - { label: "Turkey", value: "asia/tr" }
+                            - { label: "Turkmenistan", value: "asia/tm" }
+                            - { label: "Uzbekistan", value: "asia/uz" }
+                            - { label: "Vietnam", value: "asia/vn" }
+                            - { label: "Yemen", value: "asia/ye" }
+                            # ── Europe ───────────────────────────────────────
+                            - { label: "Albania", value: "europe/al" }
+                            - { label: "Andorra", value: "europe/ad" }
+                            - { label: "Austria", value: "europe/at" }
+                            - { label: "Belarus", value: "europe/by" }
+                            - { label: "Belgium", value: "europe/be" }
+                            - { label: "Bosnia and Herzegovina", value: "europe/ba" }
+                            - { label: "Bulgaria", value: "europe/bg" }
+                            - { label: "Croatia", value: "europe/hr" }
+                            - { label: "Czech Republic", value: "europe/cz" }
+                            - { label: "Denmark", value: "europe/dk" }
+                            - { label: "Estonia", value: "europe/ee" }
+                            - { label: "Finland", value: "europe/fi" }
+                            - { label: "France", value: "europe/fr" }
+                            - { label: "Germany", value: "europe/de" }
+                            - { label: "Greece", value: "europe/gr" }
+                            - { label: "Hungary", value: "europe/hu" }
+                            - { label: "Iceland", value: "europe/is" }
+                            - { label: "Ireland", value: "europe/ie" }
+                            - { label: "Italy", value: "europe/it" }
+                            - { label: "Latvia", value: "europe/lv" }
+                            - { label: "Liechtenstein", value: "europe/li" }
+                            - { label: "Lithuania", value: "europe/lt" }
+                            - { label: "Luxembourg", value: "europe/lu" }
+                            - { label: "Malta", value: "europe/mt" }
+                            - { label: "Moldova", value: "europe/md" }
+                            - { label: "Monaco", value: "europe/mc" }
+                            - { label: "Montenegro", value: "europe/me" }
+                            - { label: "Netherlands", value: "europe/nl" }
+                            - { label: "North Macedonia", value: "europe/mk" }
+                            - { label: "Norway", value: "europe/no" }
+                            - { label: "Poland", value: "europe/pl" }
+                            - { label: "Portugal", value: "europe/pt" }
+                            - { label: "Romania", value: "europe/ro" }
+                            - { label: "San Marino", value: "europe/sm" }
+                            - { label: "Serbia", value: "europe/rs" }
+                            - { label: "Slovakia", value: "europe/sk" }
+                            - { label: "Slovenia", value: "europe/si" }
+                            - { label: "Spain", value: "europe/es" }
+                            - { label: "Sweden", value: "europe/se" }
+                            - { label: "Switzerland", value: "europe/ch" }
+                            - { label: "Ukraine", value: "europe/ua" }
+                            - { label: "United Kingdom", value: "europe/gb" }
+                            - { label: "Vatican City", value: "europe/va" }
+                            # ── North / Central America & Caribbean ──────────
+                            - { label: "Belize", value: "namerica/bz" }
+                            - { label: "Canada", value: "namerica/ca" }
+                            - { label: "Costa Rica", value: "namerica/cr" }
+                            - { label: "Cuba", value: "namerica/cu" }
+                            - { label: "Dominican Republic", value: "namerica/do" }
+                            - { label: "El Salvador", value: "namerica/sv" }
+                            - { label: "Greenland", value: "namerica/gl" }
+                            - { label: "Grenada", value: "namerica/gd" }
+                            - { label: "Guatemala", value: "namerica/gt" }
+                            - { label: "Haiti", value: "namerica/ht" }
+                            - { label: "Honduras", value: "namerica/hn" }
+                            - { label: "Jamaica", value: "namerica/jm" }
+                            - { label: "Mexico", value: "namerica/mx" }
+                            - { label: "Panama", value: "namerica/pa" }
+                            - { label: "Puerto Rico", value: "namerica/pr" }
+                            - { label: "Trinidad and Tobago", value: "namerica/tt" }
+                            - { label: "United States", value: "namerica/us" }
+                            # ── South America ────────────────────────────────
+                            - { label: "Argentina", value: "samerica/ar" }
+                            - { label: "Bolivia", value: "samerica/bo" }
+                            - { label: "Brazil", value: "samerica/br" }
+                            - { label: "Chile", value: "samerica/cl" }
+                            - { label: "Colombia", value: "samerica/co" }
+                            - { label: "Ecuador", value: "samerica/ec" }
+                            - { label: "Guyana", value: "samerica/gy" }
+                            - { label: "Nicaragua", value: "samerica/ni" }
+                            - { label: "Paraguay", value: "samerica/py" }
+                            - { label: "Peru", value: "samerica/pe" }
+                            - { label: "Uruguay", value: "samerica/uy" }
+                            - { label: "Venezuela", value: "samerica/ve" }
+                            # ── Oceania ──────────────────────────────────────
+                            - { label: "Australia", value: "oceania/au" }
+                            - { label: "Fiji", value: "oceania/fj" }
+                            - { label: "New Zealand", value: "oceania/nz" }
+                            - { label: "Papua New Guinea", value: "oceania/pg" }
+                            - { label: "Samoa", value: "oceania/ws" }
+                            - { label: "Solomon Islands", value: "oceania/sb" }
+                            - { label: "Tonga", value: "oceania/to" }
+                            - { label: "Vanuatu", value: "oceania/vu" }
+                      - { label: "Country Name", name: "country_name", widget: "string", hint: "Display name matching your Country selection above (e.g. Ethiopia)" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Taste Notes", name: "taste_notes", widget: "string" }
+                      - { label: "Price", name: "price", widget: "number", value_type: "float" }
+                      - { label: "Region", name: "region", widget: "string" }
+                      - { label: "Variety", name: "variety", widget: "string" }
+                      - { label: "Processing", name: "processing", widget: "string" }
+                      - { label: "Altitude", name: "altitude", widget: "string" }
+
+    - name: "menu"
+      label: "Menu"
+      icon: "restaurant_menu"
+      files:
+          - name: "menu"
+            label: "Menu"
+            file: "_data/menu.yml"
+            fields:
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Copy", name: "copy", widget: "text" }
+                - label: "Menu Sections"
+                  name: "sections"
+                  widget: "list"
+                  label_singular: "Menu Section"
+                  fields:
+                      - { label: "Section Title", name: "title", widget: "string" }
+                      - label: "Item Groups"
+                        name: "groups"
+                        widget: "list"
+                        label_singular: "Item Group"
+                        fields:
+                            - { label: "Group Title", name: "title", widget: "string", required: false }
+                            - label: "Items"
+                              name: "items"
+                              widget: "list"
+                              label_singular: "Menu Item"
+                              fields:
+                                  - { label: "Title", name: "title", widget: "string" }
+                                  - { label: "Price", name: "price", widget: "number", value_type: "float" }
+                                  - { label: "Note", name: "note", widget: "text", required: false }
+                                  - { label: "Choose Your Beans", name: "choose_beans", widget: "boolean", default: false }

@@ -14,14 +14,28 @@ html {
     font-style: normal;
 }
 
-main {
-    background-color: #f7f0e6;
-}
+/* Globals */
+/* ----------------------------------- */
 .site_wrapper {
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 40px;
 }
+section {
+    padding: 80px;
+}
+section > h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 0 5px 0;
+    line-height: 1.2em;
+}
+section > h2 + p {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Header */
+/* ----------------------------------- */
 .header_wrapper {
     background-color: #160e02;
     color: white;
@@ -85,19 +99,8 @@ main {
     font-weight: 400;
 }
 
-section {
-    padding: 80px;
-}
-section > h2 {
-    font-size: 50px;
-    font-weight: 200;
-    margin: 0 0 5px 0;
-    line-height: 1.2em;
-}
-section > h2 + p {
-    margin: 0;
-    font-weight: 300;
-}
+/* Beans */
+/* ----------------------------------- */
 section.beans {
     background: #fcf8f3;
 }
@@ -164,10 +167,11 @@ section.beans {
     font-weight: 700;
 }
 .bean_price sup {
-    font-size: 0.7em;
+    font-size: 0.6em;
     position: relative;
-    top: -8px;
+    top: 1px;
     color: #8a6f6f;
+    left: 2px;
 }
 .country_icon {
     position: absolute;
@@ -180,6 +184,8 @@ section.beans {
     background-position: center;
 }
 
+/* Menu */
+/* ----------------------------------- */
 section.menu {
     background: #fff;
 }
@@ -187,12 +193,20 @@ section.menu {
     margin: 0 0 60px 0;
 }
 .menu_section h3 {
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 34px;
+    font-weight: 400;
     margin: 50px 0 20px 0;
+    color: #6a1414;
+}
+
+.menu_item_group h4 {
+    margin: 25px 0 5px 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #6a1414;
 }
 .menu_item {
-    padding: 7px 0;
+    padding: 12px 0;
     border-bottom: 1px dotted #dacbb5;
 }
 .menu_item:last-child {
@@ -203,23 +217,11 @@ section.menu {
     gap: 30px;
     line-height: 1.3em;
     justify-content: space-between;
-}
-.menu_item_flex .menu_item_title {
-    font-size: 21px;
-    font-weight: 400;
-}
-.menu_item_price {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
 }
 .menu_item_note {
     padding: 3px 0 0 0;
     font-size: 14px;
     font-style: italic;
-}
-
-.menu_item_group {
-    font-size: 22px;
-    font-weight: 300;
-    margin: 25px 0 15px 0;
 }

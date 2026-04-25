@@ -4,121 +4,87 @@ title: Home
 ---
 
 <section class="beans">
-    <h2>seasonal beans</h2>
-    <p>We rotate beans regularly. There is always something new to try!</p>
+    {% if site.data.beans.heading and site.data.beans.heading != "" %}
+    <h2>{{ site.data.beans.heading }}</h2>
+    {% endif %} {% if site.data.beans.copy and site.data.beans.copy != "" %}
+    <p>{{ site.data.beans.copy }}</p>
+    {% endif %}
 
     <div class="beans_list">
+        {% for bean in site.data.beans.bean_list %}
         <div class="single_bean">
             <div class="bean_details">
-                <h3>Panama</h3>
-                <h4>Boquete Damarli Noble Rogue</h4>
-                <p class="notes">Citrus, Mango, Strawberry, Grapefruit, Hazlenut</p>
+                {% if bean.country_name and bean.country_name != "" %}
+                <h3>{{ bean.country_name }}</h3>
+                {% endif %} {% if bean.title and bean.title != "" %}
+                <h4>{{ bean.title }}</h4>
+                {% endif %} {% if bean.taste_notes and bean.taste_notes != "" %}
+                <p class="notes">{{ bean.taste_notes }}</p>
+                {% endif %}
 
                 <div class="bean_metas">
+                    {% if bean.region and bean.region != "" %}
                     <div class="bean_meta_single">
                         <div class="bean_meta_single_key">Region</div>
-                        <div class="bean_meta_single_value">West Valley</div>
+                        <div class="bean_meta_single_value">{{ bean.region }}</div>
                     </div>
+                    {% endif %} {% if bean.variety and bean.variety != "" %}
                     <div class="bean_meta_single">
                         <div class="bean_meta_single_key">Variety</div>
-                        <div class="bean_meta_single_value">West Valley</div>
+                        <div class="bean_meta_single_value">{{ bean.variety }}</div>
                     </div>
+                    {% endif %} {% if bean.processing and bean.processing != "" %}
                     <div class="bean_meta_single">
                         <div class="bean_meta_single_key">Processing</div>
-                        <div class="bean_meta_single_value">Washed</div>
+                        <div class="bean_meta_single_value">{{ bean.processing }}</div>
                     </div>
+                    {% endif %} {% if bean.altitude and bean.altitude != "" %}
                     <div class="bean_meta_single">
                         <div class="bean_meta_single_key">Altitude</div>
-                        <div class="bean_meta_single_value">1600 masl</div>
+                        <div class="bean_meta_single_value">{{ bean.altitude }}</div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
-            <div class="country_icon"></div>
-            <div class="bean_price">45đ</div>
+            <div class="country_icon" style="background-image: url(/assets/img/map_svgs/{{ bean.country }}.svg)"></div>
+            <div class="bean_price">{{ bean.price }}<sup>đ</sup></div>
         </div>
-        <div class="single_bean">
-            <div class="bean_details">
-                <h3>Costa Rica</h3>
-                <h4>Boquete Damarli Noble Rogue</h4>
-                <p class="notes">Citrus, Mango, Strawberry, Grapefruit, Hazlenut</p>
-
-                <div class="bean_metas">
-                    <div class="bean_meta_single">
-                        <div class="bean_meta_single_key">Region</div>
-                        <div class="bean_meta_single_value">West Valley</div>
-                    </div>
-                    <div class="bean_meta_single">
-                        <div class="bean_meta_single_key">Variety</div>
-                        <div class="bean_meta_single_value">West Valley</div>
-                    </div>
-                    <div class="bean_meta_single">
-                        <div class="bean_meta_single_key">Processing</div>
-                        <div class="bean_meta_single_value">Washed</div>
-                    </div>
-                    <div class="bean_meta_single">
-                        <div class="bean_meta_single_key">Altitude</div>
-                        <div class="bean_meta_single_value">1600 masl</div>
-                    </div>
-                </div>
-                <div class="bean_details_price"></div>
-            </div>
-            <div class="country_icon" style="background-image: url(#)"></div>
-            <div class="bean_price">45<sup>đ</sup></div>
-        </div>
+        {% endfor %}
     </div>
 </section>
 
 <section class="menu">
-    <h2>Our Menu</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate reprehenderit adipisci quaerat.</p>
+    {% if site.data.menu.title and site.data.menu.title != "" %}
+    <h2>{{ site.data.menu.title }}</h2>
+    {% endif %} {% if site.data.menu.copy and site.data.menu.copy != "" %}
+    <p>{{ site.data.menu.copy }}</p>
+    {% endif %}
 
     <div class="our_menu">
+        {% for section in site.data.menu.sections %}
         <div class="menu_section">
-            <h3>Espresso Bar</h3>
-            <div class="menu_item">
-                <div class="menu_item_flex">
-                    <div class="menu_item_title">Espresso</div>
-                    <div class="menu_item_price">30đ</div>
-                </div>
-                <div class="menu_item_note">Lorem ipsum dolor sit amet consectetur</div>
-            </div>
-            <div class="menu_item">
-                <div class="menu_item_flex">
-                    <div class="menu_item_title">Americano</div>
-                    <div class="menu_item_price">30đ</div>
-                </div>
-            </div>
+            <h3>{{ section.title }}</h3>
+            {% for group in section.groups %}
             <div class="menu_item_group">
-                <h4>coffee with milk</h4>
+                {% if group.title and group.title != "" %}
+                <h4>{{ group.title }}</h4>
+                {% endif %} {% for item in group.items %}
                 <div class="menu_item">
                     <div class="menu_item_flex">
-                        <div class="menu_item_title">Cortado</div>
-                        <div class="menu_item_price">60đ</div>
+                        <div class="menu_item_title">
+                            {{ item.title }}{% if item.choose_beans %}
+                            <span class="choose_beans_tag">your beans</span>{% endif %}
+                        </div>
+                        <div class="menu_item_price">{{ item.price }}đ</div>
                     </div>
-                    <div class="menu_item_note">Lorem ipsum dolor sit amet consectetur</div>
+                    {% if item.note and item.note != "" %}
+                    <div class="menu_item_note">{{ item.note }}</div>
+                    {% endif %}
                 </div>
-                <div class="menu_item">
-                    <div class="menu_item_flex">
-                        <div class="menu_item_title">Cappuccino</div>
-                        <div class="menu_item_price">45đ</div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
-            <div class="menu_item_group">
-                <h4>blended</h4>
-                <div class="menu_item">
-                    <div class="menu_item_flex">
-                        <div class="menu_item_title">Brown Sugar Espresso</div>
-                        <div class="menu_item_price">40đ</div>
-                    </div>
-                </div>
-                <div class="menu_item">
-                    <div class="menu_item_flex">
-                        <div class="menu_item_title">Tonic Espresso</div>
-                        <div class="menu_item_price">45đ</div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
+        {% endfor %}
     </div>
 </section>
