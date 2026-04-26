@@ -1,10 +1,10 @@
-order: 2
-country: namerica/cr
-country_name: Costa Rica
-title: West Valley Caturra
-taste_notes: Grapes, Mango, Raisins, Toffe, Blueberry  Jam, Orange Peel
+order: 10
+country: africa/et
+country_name: Ethiopia
+title: Botabaa Washed Light Roast
+taste_notes: Flowers, Peach, Apricot, Lychee jelly, Gardenia, Bergamot, Lemon peel, Smooth and complex
 price: 45
-region: West Valley
-variety: Caturra
-processing: Natural
-altitude: 1300 masl
+region: Yirgacheffe
+variety: Botabaa
+processing: Washed
+altitude: 1500–2100+ masl
