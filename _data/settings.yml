@@ -1,4 +1,6 @@
 business_name: Brewinghood Coffeebar Da Nang
+meta_title: Brewing Hood Coffee Bar — Da Nang, Vietnam
+meta_description: Brewing Hood is a specialty coffee bar in Da Nang, Vietnam offering slow bar, espresso, and unique craft beverages. Located at 04 An Thượng 40, open daily except Thursdays 09:00–18:00.
 social_accounts:
   - name: Google Maps
     icon: fa-solid fa-location-dot
@@ -19,9 +21,9 @@ beans_heading: seasonal beans
 beans_copy: We rotate beans regularly. There is always something new to try!
 menu_title: our menu
 menu_copy: Full Coffee Bar, plus a few extras!
-address: 123 Main Street, Anytown NY
-tagline: Your neighborhood coffeeshop
-phone: (555) 555-1111
+address: 04 An Thượng 40, Da Nang, Vietnam
+tagline: Slow bar. Specialty espresso. Good vibes.
+phone: ""
 menu_items:
   - name: White Coffee 2
     description: Bright citrus and pine, 6.5% ABV

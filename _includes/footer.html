@@ -1,3 +1,21 @@
-        <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<footer>
+            <div class="footer_flex">
+                <div class="logo" aria-label="{{ site.data.settings.business_name }}"></div>
+                <div class="site_info_meta">
+                    <div class="socials">
+                        {% for account in site.data.settings.social_accounts %}
+                        <a href="{{ account.url }}" target="_blank" aria-label="{{ account.name }}"><i class="{{ account.icon }}"></i></a>
+                        {% endfor %}
+                    </div>
+                    <div class="hours">
+                        <div class="hours_time">{{ site.data.settings.hours }}</div>
+                        <div class="hours_note">{{ site.data.settings.hours_note }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_masthead_wrap">
+                <a href="https://www.youtube.com/@OneDayWebsites" target="_blank" class="masthead">free site build by @OneDayWebsites</a>
+            </div>
+        </footer>
     </body>
 </html>

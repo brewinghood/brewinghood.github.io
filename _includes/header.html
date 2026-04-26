@@ -3,9 +3,45 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{ page.title }} | {{ site.data.settings.business_name }}</title>
+        {% if site.data.settings.meta_title and site.data.settings.meta_title != "" %}
+        <title>{{ site.data.settings.meta_title }}</title>
+        {% else %}
+        <title>{{ site.data.settings.business_name }}</title>
+        {% endif %}
+        {% if site.data.settings.meta_description and site.data.settings.meta_description != "" %}
+        <meta name="description" content="{{ site.data.settings.meta_description }}" />
+        {% endif %}
         <script src="https://kit.fontawesome.com/a67760889b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            "name": "{{ site.data.settings.business_name }}",
+            {% if site.data.settings.meta_description and site.data.settings.meta_description != "" %}
+            "description": "{{ site.data.settings.meta_description }}",
+            {% endif %}
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "{{ site.data.settings.address }}",
+                "addressLocality": "Da Nang",
+                "addressCountry": "VN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 16.047111,
+                "longitude": 108.239500
+            },
+            "openingHours": "Mo Tu We Fr Sa Su 09:00-18:00",
+            "servesCuisine": "Coffee",
+            {% if site.data.settings.phone and site.data.settings.phone != "" %}
+            "telephone": "{{ site.data.settings.phone }}",
+            {% endif %}
+            "url": "{{ site.url }}{{ site.baseurl }}",
+            "sameAs": [{% for account in site.data.settings.social_accounts %}"{{ account.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+        }
+        </script>
 
     </head>
     <body>

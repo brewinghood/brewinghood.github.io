@@ -80,7 +80,7 @@ title: Home
                             {{ item.title }}{% if item.choose_beans %}
                             <span class="choose_beans_tag">your beans</span>{% endif %}
                         </div>
-                        <div class="menu_item_price">{{ item.price }}đ</div>
+                        <div class="menu_item_price">{{ item.price }}<span class="menu_dong">đ</span></div>
                     </div>
                     {% if item.note and item.note != "" %}
                     <div class="menu_item_note">{{ item.note }}</div>
@@ -93,3 +93,18 @@ title: Home
         {% endfor %}
     </div>
 </section>
+{% assign about = site.data.about %} {% if about.about_image_1 and about.about_image_1 != "" and about.about_image_2 and
+about.about_image_2 != "" and about.about_bio and about.about_bio != "" %}
+<section class="about">
+    {% if about.about_heading and about.about_heading != "" %}
+    <h2>{{ about.about_heading }}</h2>
+    {% endif %} {% if about.about_tagline and about.about_tagline != "" %}
+    <p>{{ about.about_tagline }}</p>
+    {% endif %}
+    <div class="story_grid">
+        <div class="story_image" style="background-image: url('{{ site.baseurl }}{{ about.about_image_1}}')"></div>
+        <div class="story_block_copy">{{ about.about_bio | markdownify }}</div>
+        <div class="story_image" style="background-image: url('{{ site.baseurl }}{{ about.about_image_2 }}')"></div>
+    </div>
+</section>
+{% endif %}
