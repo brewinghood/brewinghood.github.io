@@ -22,7 +22,12 @@ collections:
                   label_singular: "Social Account"
                   fields:
                       - { label: "Name", name: "name", widget: "string" }
-                      - { label: "Icon (FA Class)", name: "icon", widget: "string", hint: "Full class string e.g. fa-brands fa-instagram or fa-solid fa-location-dot" }
+                      - {
+                            label: "Icon (FA Class)",
+                            name: "icon",
+                            widget: "string",
+                            hint: "Full class string e.g. fa-brands fa-instagram or fa-solid fa-location-dot from fontawesome.com",
+                        }
                       - { label: "URL", name: "url", widget: "string" }
                 - { label: "Hours", name: "hours", widget: "string" }
                 - { label: "Hours Note", name: "hours_note", widget: "string" }
@@ -44,7 +49,13 @@ collections:
       summary: "{{country_name}} — {{title}}"
       sortable_fields: ["order", "country_name", "title"]
       fields:
-          - { label: "Order", name: "order", widget: "number", default: 1, hint: "Controls display order on the site (1 = first)" }
+          - {
+                label: "Order",
+                name: "order",
+                widget: "number",
+                default: 1,
+                hint: "Controls display order on the site (1 = first)",
+            }
           - label: "Country"
             name: "country"
             widget: "select"
@@ -239,7 +250,12 @@ collections:
                 - { label: "Solomon Islands", value: "oceania/sb" }
                 - { label: "Tonga", value: "oceania/to" }
                 - { label: "Vanuatu", value: "oceania/vu" }
-          - { label: "Country Name", name: "country_name", widget: "string", hint: "Display name matching your Country selection above (e.g. Ethiopia)" }
+          - {
+                label: "Country Name",
+                name: "country_name",
+                widget: "string",
+                hint: "Display name matching your Country selection above (e.g. Ethiopia)",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Taste Notes", name: "taste_notes", widget: "string" }
           - { label: "Price", name: "price", widget: "number", value_type: "float" }
@@ -260,7 +276,13 @@ collections:
       summary: "{{title}}"
       sortable_fields: ["order", "title"]
       fields:
-          - { label: "Order", name: "order", widget: "number", default: 1, hint: "Controls display order on the site (1 = first)" }
+          - {
+                label: "Order",
+                name: "order",
+                widget: "number",
+                default: 1,
+                hint: "Controls display order on the site (1 = first)",
+            }
           - { label: "Section Title", name: "title", widget: "string" }
           - label: "Item Groups"
             name: "groups"
