@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -147,6 +146,7 @@ section.beans {
     display: flex;
     flex-wrap: wrap;
     gap: 70px;
+    width: 100%;
 }
 .bean_meta_single {
     flex: 0 0 auto;
@@ -189,6 +189,14 @@ section.beans {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.7;
+}
+
+.choose_beans_tag {
+    line-height: 0em;
+    font-size: 30px;
+    color: #db9084;
+    position: relative;
+    top: 10px;
 }
 
 /* Menu */
@@ -256,6 +264,8 @@ section.about {
     border-radius: 4px;
     grid-column: 2/3;
     min-height: 380px;
+    background-size: cover;
+    background-position: center;
 }
 .story_image:first-child {
     grid-row: 1/2;
@@ -320,7 +330,7 @@ footer .site_info_meta .hours {
 }
 @media (max-width: 1000px) {
     .bean_metas {
-        gap: 15px;
+        gap: 15px 30px;
     }
     .bean_meta_single {
         flex: 1 0 40%;
@@ -373,10 +383,14 @@ footer .site_info_meta .hours {
         font-size: 40px;
     }
     .single_bean {
-        padding: 30px 50px 30px 0;
+        padding: 30px 0;
+    }
+    .bean_details h3 {
+        padding: 0 80px 0 0;
     }
     .bean_details h4 {
         font-size: 15px;
+        margin: 5px 0;
     }
     .bean_price {
         width: 50px;
@@ -385,11 +399,12 @@ footer .site_info_meta .hours {
     .country_icon {
         left: initial;
         top: initial;
-        width: 40%;
+        width: 20%;
+        background-size: 100%;
         height: auto;
         opacity: 0.1;
         aspect-ratio: 1/1;
-        bottom: 0;
+        bottom: 30px;
         right: 0;
     }
     .bean_metas {
@@ -410,5 +425,17 @@ footer .site_info_meta .hours {
     }
     .menu_item_group h4 {
         font-size: 20px;
+    }
+    .menu_item {
+        padding: 10px 0;
+    }
+
+    .story_image:first-child,
+    .story_image:last-child,
+    .story_image {
+        aspect-ratio: 1/1;
+    }
+    .story_grid {
+        gap: 30px;
     }
 }
