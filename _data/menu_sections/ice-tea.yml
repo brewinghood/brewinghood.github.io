@@ -1,4 +1,3 @@
----
 order: 2
 title: Ice tea
 groups:
@@ -20,4 +19,3 @@ groups:
         price: 35
         note: ''
         choose_beans: false
----

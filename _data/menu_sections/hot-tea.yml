@@ -1,4 +1,3 @@
----
 order: 30
 title: Hot Tea
 groups:
@@ -12,4 +11,3 @@ groups:
         price: 40
         note: ''
         choose_beans: false
----
