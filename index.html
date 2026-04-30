@@ -62,7 +62,11 @@ title: Home
     {% endif %} {% if site.data.settings.menu_copy and site.data.settings.menu_copy != "" %}
     <p>{{ site.data.settings.menu_copy }}</p>
     {% endif %}
-    <p><span class="choose_beans_tag">*</span> Denotes you may choose a seasonal bean for this drink</p>
+    <p class="legend legend_1"><span class="choose_beans_tag" style="width: 30px">*</span> Choose Your Seasonal Bean</p>
+    <p class="legend">
+        <span class="barista_recommendation_tag" style="width: 30px"><i class="fa-solid fa-paw"></i></span> Barista
+        Recommendation
+    </p>
 
     <div class="our_menu">
         {% assign sections_all = "" | split: "" %} {% for pair in site.data.menu_sections %}{% assign sections_all =

@@ -191,14 +191,6 @@ section.beans {
     opacity: 0.4;
 }
 
-.choose_beans_tag {
-    line-height: 0em;
-    font-size: 30px;
-    color: #db9084;
-    position: relative;
-    top: 10px;
-}
-
 /* Menu */
 /* ----------------------------------- */
 section.menu {
@@ -246,6 +238,28 @@ section.menu {
     padding: 3px 0 0 0;
     font-size: 14px;
     font-style: italic;
+}
+
+p.legend {
+    margin: 0;
+}
+p.legend_1 {
+    margin: 25px 0 0 0;
+}
+.legend span {
+    width: 25px;
+    display: inline-block;
+}
+.choose_beans_tag {
+    line-height: 0em;
+    font-size: 30px;
+    color: #db9084;
+    position: relative;
+    top: 10px;
+}
+.barista_recommendation_tag {
+    color: #ed7f7f;
+    font-size: 15px;
 }
 
 /* About */
