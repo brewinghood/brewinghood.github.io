@@ -1,21 +1,21 @@
-order: 100
+order: 60
 title: Robusta Coffee
 groups:
-  - title: ''
-    items:
-      - title: Kem béo - Creamy coffee
-        price: 30
-        note: ''
-        choose_beans: false
-      - title: Bạc xỉu - White coffee
-        price: 25
-        note: ''
-        choose_beans: false
-      - title: Nâu - Brown coffee
-        price: 25
-        note: ''
-        choose_beans: false
-      - title: Đen - Black coffee
-        price: 20
-        note: ''
-        choose_beans: false
+    - title: ""
+      items:
+          - title: Kem béo - Creamy coffee
+            price: 30
+            note: ""
+            choose_beans: false
+          - title: Bạc xỉu - White coffee
+            price: 25
+            note: ""
+            choose_beans: false
+          - title: Nâu - Brown coffee
+            price: 25
+            note: ""
+            choose_beans: false
+          - title: Đen - Black coffee
+            price: 20
+            note: ""
+            choose_beans: false

@@ -1,57 +1,57 @@
-order: 1
+order: 10
 title: Espresso Bar
 groups:
-  - title: ''
-    items:
-      - title: Espresso
-        price: 30
-        note: ''
-        choose_beans: false
-      - title: Americano
-        price: 30
-        note: ''
-        choose_beans: false
-  - title: Coffee With Milk
-    items:
-      - title: Cortado
-        price: 60
-        note: ''
-        choose_beans: false
-      - title: Cappuccino
-        price: 45
-        note: ''
-        choose_beans: false
-      - title: Flat White
-        price: 50
-        note: ''
-        choose_beans: false
-      - title: Latte
-        price: 50
-        note: ''
-        choose_beans: false
-      - title: Dirty Coffee
-        price: 50
-        note: ''
-        choose_beans: true
-      - title: Tanka
-        price: 75
-        note: ''
-        choose_beans: true
-  - title: Coffee Blends
-    items:
-      - title: Brown Sugar Espresso
-        price: 40
-        note: ''
-        choose_beans: false
-      - title: Tonic Espresso
-        price: 45
-        note: ''
-        choose_beans: false
-      - title: Orange Espresso
-        price: 45
-        note: ''
-        choose_beans: false
-      - title: Lime Espresso
-        price: 45
-        note: ''
-        choose_beans: false
+    - title: ""
+      items:
+          - title: Espresso
+            price: 30
+            note: ""
+            choose_beans: false
+          - title: Americano
+            price: 30
+            note: ""
+            choose_beans: false
+    - title: Coffee With Milk
+      items:
+          - title: Cortado
+            price: 60
+            note: ""
+            choose_beans: false
+          - title: Cappuccino
+            price: 45
+            note: ""
+            choose_beans: false
+          - title: Flat White
+            price: 50
+            note: ""
+            choose_beans: false
+          - title: Latte
+            price: 50
+            note: ""
+            choose_beans: false
+          - title: Dirty Coffee
+            price: 50
+            note: ""
+            choose_beans: true
+          - title: Tanka
+            price: 75
+            note: ""
+            choose_beans: true
+    - title: Coffee Blends
+      items:
+          - title: Brown Sugar Espresso
+            price: 40
+            note: ""
+            choose_beans: false
+          - title: Tonic Espresso
+            price: 45
+            note: ""
+            choose_beans: false
+          - title: Orange Espresso
+            price: 45
+            note: ""
+            choose_beans: false
+          - title: Lime Espresso
+            price: 45
+            note: ""
+            choose_beans: false

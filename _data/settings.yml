@@ -23,17 +23,3 @@ menu_title: our menu
 menu_copy: Full Coffee Bar, plus a few extras!
 address: 04 An Thượng 40, Da Nang, Vietnam
 phone: '0772429232'
-menu_items:
-  - price: '7.00'
-    description: Bright citrus and pine, 6.5% ABV
-    name: White Coffee 2
-  - price: '6.50'
-    description: Bavarian wheat, banana and clove, 5.2% ABV
-    name: Brown Coffee
-  - price: '7.50'
-    description: Dark roasted malt, chocolate finish, 7.1% ABV
-    name: Coconut Coffee
-  - price: '7.50'
-    description: Dark roasted malt, chocolate finish, 7.1% ABV
-    name: Creamy Salt Coffee
-tagline: Slow bar. Specialty espresso. Good vibes.

@@ -1,17 +1,17 @@
-order: 50
+order: 100
 title: Japanese Tea
 groups:
-  - title: ''
-    items:
-      - title: Matcha
-        price: 40
-        note: ''
-        choose_beans: false
-      - title: Matcha Latte
-        price: 55
-        note: ''
-        choose_beans: false
-      - title: Houjicha Latte
-        price: 50
-        note: ''
-        choose_beans: false
+    - title: ""
+      items:
+          - title: Matcha
+            price: 40
+            note: ""
+            choose_beans: false
+          - title: Matcha Latte
+            price: 55
+            note: ""
+            choose_beans: false
+          - title: Houjicha Latte
+            price: 50
+            note: ""
+            choose_beans: false

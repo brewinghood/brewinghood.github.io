@@ -1,33 +1,33 @@
-order: 90
+order: 50
 title: Ice Cream
 groups:
-  - title: ''
-    items:
-      - title: Mango Sorbet
-        price: 35
-        note: ''
-        choose_beans: false
-      - title: Vanilla Gelato
-        price: 35
-        note: ''
-        choose_beans: false
-      - title: Matcha Gelato
-        price: 35
-        note: ''
-        choose_beans: false
-      - title: Chocolate Ice Scream
-        price: 40
-        note: ''
-        choose_beans: false
-      - title: Brownie Sundae
-        price: 55
-        note: ''
-        choose_beans: false
-      - title: Affogato
-        price: 55
-        note: ''
-        choose_beans: true
-      - title: Matcha Affogato
-        price: 55
-        note: ''
-        choose_beans: false
+    - title: ""
+      items:
+          - title: Mango Sorbet
+            price: 35
+            note: ""
+            choose_beans: false
+          - title: Vanilla Gelato
+            price: 35
+            note: ""
+            choose_beans: false
+          - title: Matcha Gelato
+            price: 35
+            note: ""
+            choose_beans: false
+          - title: Chocolate Ice Scream
+            price: 40
+            note: ""
+            choose_beans: false
+          - title: Brownie Sundae
+            price: 55
+            note: ""
+            choose_beans: false
+          - title: Affogato
+            price: 55
+            note: ""
+            choose_beans: true
+          - title: Matcha Affogato
+            price: 55
+            note: ""
+            choose_beans: false

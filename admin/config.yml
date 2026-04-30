@@ -16,8 +16,20 @@ collections:
             file: "_data/settings.yml"
             fields:
                 - { label: "Business Name", name: "business_name", widget: "string" }
-                - { label: "Meta Title", name: "meta_title", widget: "string", required: false, hint: "Overrides the default page title in the browser tab and search results." }
-                - { label: "Meta Description", name: "meta_description", widget: "text", required: false, hint: "Shown in search engine results beneath the page title." }
+                - {
+                      label: "Meta Title",
+                      name: "meta_title",
+                      widget: "string",
+                      required: false,
+                      hint: "Overrides the default page title in the browser tab and search results.",
+                  }
+                - {
+                      label: "Meta Description",
+                      name: "meta_description",
+                      widget: "text",
+                      required: false,
+                      hint: "Shown in search engine results beneath the page title.",
+                  }
                 - label: "Social Accounts"
                   name: "social_accounts"
                   widget: "list"
@@ -313,3 +325,9 @@ collections:
                       - { label: "Price", name: "price", widget: "number", value_type: "float" }
                       - { label: "Note", name: "note", widget: "text", required: false }
                       - { label: "Choose Your Beans", name: "choose_beans", widget: "boolean", default: false }
+                      - {
+                            label: "Barista Recommendation",
+                            name: "barista_recommendation",
+                            widget: "boolean",
+                            default: false,
+                        }

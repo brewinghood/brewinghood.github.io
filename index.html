@@ -78,8 +78,10 @@ title: Home
                 <div class="menu_item">
                     <div class="menu_item_flex">
                         <div class="menu_item_title">
-                            {{ item.title }}{% if item.choose_beans %}
-                            <span class="choose_beans_tag">*</span>{% endif %}
+                            {{ item.title }} {% if item.choose_beans %}<span class="choose_beans_tag">*</span>{% endif
+                            %} {% if item.barista_recommendation %}<span class="barista_recommendation_tag"
+                                ><i class="fa-solid fa-paw"></i></span
+                            >{% endif %}
                         </div>
                         <div class="menu_item_price">{{ item.price }}<span class="menu_dong">đ</span></div>
                     </div>

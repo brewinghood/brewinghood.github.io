@@ -1,13 +1,13 @@
-order: 80
+order: 40
 title: Cake
 groups:
-  - title: ''
-    items:
-      - title: Brownie
-        price: 30
-        note: ''
-        choose_beans: false
-      - title: Cheesecake
-        price: 40
-        note: ''
-        choose_beans: false
+    - title: ""
+      items:
+          - title: Brownie
+            price: 30
+            note: ""
+            choose_beans: false
+          - title: Cheesecake
+            price: 40
+            note: ""
+            choose_beans: false
