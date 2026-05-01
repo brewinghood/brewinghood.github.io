@@ -62,7 +62,6 @@ title: Home
     {% endif %} {% if site.data.settings.menu_copy and site.data.settings.menu_copy != "" %}
     <p>{{ site.data.settings.menu_copy }}</p>
     {% endif %}
-    <p class="legend legend_1"><span class="choose_beans_tag" style="width: 30px">*</span> Choose Your Seasonal Bean</p>
     <p class="legend">
         <span class="barista_recommendation_tag" style="width: 30px"><i class="fa-solid fa-paw"></i></span> Barista
         Recommendation
@@ -82,8 +81,7 @@ title: Home
                 <div class="menu_item">
                     <div class="menu_item_flex">
                         <div class="menu_item_title">
-                            {{ item.title }} {% if item.choose_beans %}<span class="choose_beans_tag">*</span>{% endif
-                            %} {% if item.barista_recommendation %}<span class="barista_recommendation_tag"
+                            {{ item.title }} {% if item.barista_recommendation %}<span class="barista_recommendation_tag"
                                 ><i class="fa-solid fa-paw"></i></span
                             >{% endif %}
                         </div>

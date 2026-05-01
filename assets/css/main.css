@@ -250,13 +250,6 @@ p.legend_1 {
     width: 25px;
     display: inline-block;
 }
-.choose_beans_tag {
-    line-height: 0em;
-    font-size: 30px;
-    color: #db9084;
-    position: relative;
-    top: 10px;
-}
 .barista_recommendation_tag {
     color: #ed7f7f;
     font-size: 15px;

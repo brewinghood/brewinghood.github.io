@@ -6,20 +6,15 @@ groups:
           - title: Cold Brew - Original
             price: 35
             note: ""
-            choose_beans: false
           - title: Cold Brew - Lime
             price: 40
             note: ""
-            choose_beans: false
           - title: Cold Brew - Orange
             price: 40
             note: ""
-            choose_beans: false
           - title: Cold Brew - Margarita
             price: 45
             note: ""
-            choose_beans: true
           - title: Cold Brew - Lemon Cream
             price: 45
             note: ""
-            choose_beans: true

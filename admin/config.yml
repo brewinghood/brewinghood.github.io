@@ -324,7 +324,6 @@ collections:
                       - { label: "Title", name: "title", widget: "string" }
                       - { label: "Price", name: "price", widget: "number", value_type: "float" }
                       - { label: "Note", name: "note", widget: "text", required: false }
-                      - { label: "Choose Your Beans", name: "choose_beans", widget: "boolean", default: false }
                       - {
                             label: "Barista Recommendation",
                             name: "barista_recommendation",

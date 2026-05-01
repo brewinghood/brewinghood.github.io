@@ -6,8 +6,6 @@ groups:
           - title: Tea Pot
             price: 50
             note: ""
-            choose_beans: false
           - title: Masala Chai
             price: 40
             note: ""
-            choose_beans: false

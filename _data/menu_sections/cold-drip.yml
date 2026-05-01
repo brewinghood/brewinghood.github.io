@@ -6,8 +6,6 @@ groups:
           - title: Cold Drip - Colombia Huila
             price: 40
             note: ""
-            choose_beans: false
           - title: Cold Drip - Red Moon
             price: 80
             note: ""
-            choose_beans: false

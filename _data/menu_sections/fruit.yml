@@ -6,8 +6,6 @@ groups:
           - title: Cam - Orange
             price: 30
             note: ""
-            choose_beans: false
           - title: Chanh - Lime
             price: 25
             note: ""
-            choose_beans: false
