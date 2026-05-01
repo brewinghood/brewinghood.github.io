@@ -1,6 +1,6 @@
 backend:
     name: github
-    repo: onedaywebsites/brewinghood
+    repo: brewinghood/brewinghood.github.io
     branch: main
     base_url: https://sveltia-cms-auth.onedaywebsites-channel.workers.dev
 
