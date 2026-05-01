@@ -21,6 +21,7 @@ groups:
           - title: Affogato
             price: 55
             note: ""
+            barista_recommendation: true
           - title: Matcha Affogato
             price: 55
             note: ""

@@ -26,9 +26,11 @@ groups:
           - title: Dirty Coffee
             price: 50
             note: ""
+            barista_recommendation: true
           - title: Tanka
             price: 75
             note: ""
+            barista_recommendation: true
     - title: Coffee Blends
       items:
           - title: Brown Sugar Espresso
