@@ -1,2 +1,5 @@
 baseurl: ""
 url: "https://brewinghood.github.io"
+
+plugins:
+  - jekyll-sitemap
